@@ -1,0 +1,3 @@
+kk,kk,kk
+vv,vv,vv
+rijul,R123,operator
