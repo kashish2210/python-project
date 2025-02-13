@@ -67,9 +67,6 @@ def courses():
     return render_template('courses.html')
 
 
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
     port = int(os.environ.get("PORT", 8000))  # Use the port provided by Render
