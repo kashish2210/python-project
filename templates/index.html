@@ -1,0 +1,616 @@
+<!DOCTYPE html><html><head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="images/photo-1494949649109-ecfc3b8c35df.jpeg" type="image/x-icon">
+  <meta name="description" content="A school website landing page with scrolling animation engages visitors and provides essential information about the institution effectively.">
+  <title>School Website</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mobirise2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jarallax.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_1.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/recaptcha.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/faq.css') }}">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap">
+  </noscript>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mbr-additional.css') }}" type="text/css">
+
+<style>
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+  .button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+
+.navbar-fixed-top {
+  top: auto;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 91% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 91% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 91% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 91% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 8rem; } }
+
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+</style>
+</head>
+<body>
+  <section data-bs-version="5.1" class="menu menu2 cid-uCGVybDc82" once="menu" id="menu-5-uCGVybDc82">
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="{{ url_for('static', filename='images/photo-1494949649109-ecfc3b8c35df.jpeg') }}" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">NEXT SCHOOL</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/course" aria-expanded="false">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/contact">Contact</a>
+					</li>
+				</ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="/contact">Join Us</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+<div class="hero">
+  <iframe src='https://my.spline.design/nexbotrobotcharacterconcept-fee98a35deed9ef9b507f4f20c331c9c/' frameborder='0' width='100%' height='100%'></iframe>
+  <div class="button-container">
+    <button href="/contact" class="button-86">Get Started</button>
+  </div>
+</div>
+<section data-bs-version="5.1" class="article13 cid-uCGVybFqPY" id="call-to-action-3-uCGVybFqPY">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-md-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style display-2">
+                            <strong>Transform Your Future Today!</strong>
+                        </h4>
+                        
+                        <div class="mbr-section-btn mt-4">
+                        <a class="btn btn-primary display-4" href="#">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-uCGVybF6ID" id="features-61-uCGVybF6ID">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Expert Instructors * Hands-On Projects * Flexible Learning * Community Support * Career Guidance * Fun Environment *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Expert Instructors * Hands-On Projects * Flexible Learning * Community Support * Career Guidance * Fun Environment *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="article8 cid-uCGVybGTu2" id="about-us-8-uCGVybGTu2">
+  
+
+  
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <div class="image-wrapper d-flex justify-content-center mb-4">
+            <img src="{{ url_for('static', filename='images/photo-1606636660488-16a8646f012c.jpeg') }}" alt="">
+
+          </div>
+          <div class="card-content-text">
+            <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>Unleash Your Potential</strong>
+          </h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Welcome to NEXT SCHOOL School, where dreams are not just dreams; they are the blueprints of your future! Our mission is to ignite the spark of creativity and innovation in every student, turning ideas into reality. We believe that education should be an adventure, not a chore, and we’re here to make that happen!</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">At NEXT SCHOOL School, we envision a world where every individual has the tools and support to thrive. Our programs are designed to challenge the status quo, pushing boundaries and encouraging out-of-the-box thinking. We’re not just teaching; we’re inspiring the next generation of leaders, creators, and change-makers!</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Join us on this exhilarating journey of learning, where every lesson is a step towards greatness. Whether you’re coding your first app or designing the next big thing, we’ve got your back. Let’s make magic happen together!</p>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people05 cid-uCGVybGK5f" id="testimonials-5-uCGVybGK5f">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Voices</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">NEXT SCHOOL School transformed my life! I never knew I could code until I joined!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1589571894960-20bbe2828d0a.jpeg') }}" alt="" data-slide-to="0" data-bs-slide-to="0">
+
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Emily Johnson</strong>
+						</h5>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">The teachers are legends! They make learning feel like a wild adventure!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1679746584014-fb31d4eb0a5e.jpeg') }}" data-slide-to="1" data-bs-slide-to="1" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Michael Smith</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I built my first app here! It’s like a dream come true!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1545803928-04e3f4cdd4ed.jpeg') }}" data-slide-to="2" data-bs-slide-to="2" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sophia Lee</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">NEXT SCHOOL School is where creativity meets reality! I love it!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1626899798511-c3eaacb02846.jpeg') }}" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>James Brown</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I never thought I could design! Now, I’m creating my own games!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1692558588242-57cec1e32bba.jpeg') }}" data-slide-to="6" data-bs-slide-to="6" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Olivia Davis</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">The community is amazing! We support each other like family!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="{{ url_for('static', filename='images/photo-1497485692312-a26e1cc30f1d.jpeg') }}" data-slide-to="7" data-bs-slide-to="7" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Liam Wilson</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-uCGVybHIPz mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/2yHFHqNfdGA?autoplay=1&loop=1&playlist=2yHFHqNfdGA&t=20&mute=1&playsinline=1&controls=0&showinfo=0&autohide=1&allowfullscreen=true&mode=transparent" id="video-5-uCGVybHIPz">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image02 cid-uCGVybHfnX mbr-fullscreen mbr-parallax-background" id="image-13-uCGVybHfnX">
+    
+    
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery07 cid-uCGVybIha8" id="gallery-14-uCGVybIha8">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="{{ url_for('static', filename='images/photo-1497633762265-9d179a990aa6.jpeg') }}" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="{{ url_for('static', filename='images/photo-1577896851231-70ef18881754.jpeg') }}" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="{{ url_for('static', filename='images/photo-1577897113292-3b95936e5206.jpeg') }}" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="{{ url_for('static', filename='images/photo-1606761568499-6d2451b23c66.jpeg') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-bs-version="5.1" class="list05 cid-uCGVybJyjh" id="faq-3-uCGVybJyjh">
+  <section class="process">
+    <div class="process__accordions">
+      <ul class="accordions__list">
+        <li class="accordions__item">
+          <button class="accordions__control" aria-expanded="false">
+            <span class="accordions__number">01</span>
+            <span class="accordions__title">Consultation</span>
+            <span class="accordions__icon"></span>
+          </button>
+          <div class="accordions__content text" aria-hidden="true">
+            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+          </div>
+        </li>
+        <li class="accordions__item">
+          <button class="accordions__control" aria-expanded="false">
+            <span class="accordions__number">02</span>
+            <span class="accordions__title">Research and Strategy Development</span>
+            <span class="accordions__icon"></span>
+          </button>
+          <div class="accordions__content text" aria-hidden="true">
+            <p>In today's marketplace, R&D strategy helps a business take a leading position and keeps it competitive, agile, adaptable, and profitable. The research and development concept is one of the earliest stages in creating a business strategy, but the commercial success of the entire project depends on its successful introduction.</p>
+          </div>
+        </li>
+        <li class="accordions__item">
+                    <button class="accordions__control" aria-expanded="false">
+                        <span class="accordions__number">03</span>
+                        <span class="accordions__title">Implementation</span>
+                        <span class="accordions__icon"></span>
+                    </button>
+                    <div class="accordions__content text" aria-hidden="true">
+                      <p>Strategy implementation is the process of turning your strategic plan into action. Whether you're executing a new marketing plan to increase sales or introducing a new work management software to increase efficiency—your plan is only as valuable as the implementation.</p>  
+                    </div>
+                </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Curious Minds Want to Know</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What courses do you offer?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">We offer a variety of courses from coding to design. Dive in and explore!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How long are the courses?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Courses vary from a few weeks to several months. Perfect for every schedule!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Is there a money-back guarantee?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Absolutely! If you don’t love it, we’ll refund you. No hard feelings!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                      <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                          <strong>Can I learn at my own pace?</strong></h5>
+                      <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">You bet! Our courses are designed for your convenience. Learn when you want!</p>
+                  </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                    <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                        <strong>Do you offer job placement assistance?</strong></h5>
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Yes! We help you land that dream job. Let’s make it happen!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features023 cid-uCGVybKKJj" id="metrics-1-uCGVybKKJj">
+
+    
+
+    
+    
+    <div class="container">
+        
+        <div class="row content-row justify-content-center">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>500+</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Happy Students</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>100%</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Satisfaction Rate</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>50+</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Courses Available</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-uCGVybKaGh" id="follow-us-1-uCGVybKaGh">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join Our Developer Community</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="hero">
+  <iframe src='https://my.spline.design/draganddropbookpencilschoolcopy-1bea7ab33c9bf8e2496488fe61d9df35/' frameborder='0' width='100%' height='50%'></iframe>
+  <div class="button-container">
+    <button href="/contact" class="button-86">Get Started</button>
+  </div>
+</div>
+<div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&q=Dharmaj%20India" allowfullscreen=""></iframe></div>
+<section data-bs-version="5.1" class="footer3 cid-uCGVybMaI1" once="footers" id="footer-3-uCGVybMaI1">
+            <div class="col-12 mt-4">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-facebook display-7"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-twitter socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-linkedin"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-twitch"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <p class="mbr-fonts-style copyright display-7">© 2025 NEXT SCHOOL School. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jarallax.js') }}"></script>
+<script src="{{ url_for('static', filename='js/smooth-scroll.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+<script src="{{ url_for('static', filename='js/navbar-dropdown.js') }}"></script>
+<script src="{{ url_for('static', filename='js/player.js') }}"></script>
+<script src="{{ url_for('static', filename='js/scroll-gallery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/formoid.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/faq.js') }}"></script>
+</body>
+</html>
