@@ -8,7 +8,7 @@ from flask_mail import Mail, Message
 import os
 from whitenoise import WhiteNoise
 app = Flask(__name__)
-app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="Static/")
 Bootstrap(app)
 app.secret_key = "kashish2210"
 
