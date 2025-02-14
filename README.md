@@ -34,3 +34,9 @@ proof of Gmail working:
 
 ![WhatsApp Image 2025-02-14 at 04 37 18_d7d608dd](https://github.com/user-attachments/assets/8263e4b0-352c-483c-a4a3-d23acf8a366c)
 
+![image](https://github.com/user-attachments/assets/0b799068-ff70-4316-af2d-6ca8818919d1)
+
+![image](https://github.com/user-attachments/assets/85917abc-37cf-4edf-907e-aa558fa8b539)
+
+
+
