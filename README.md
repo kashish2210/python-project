@@ -13,7 +13,10 @@
    5. then copy and paste it in app.py
    6. then enter your-email three times replace the text "your_email" to the email you want to get notification
 youtube video : https://youtu.be/OWs-FMcJ7Bc
- proof of gmail working:
+
+
+
+proof of gmail working:
 
 ![WhatsApp Image 2025-02-14 at 04 35 28_ceda51e0](https://github.com/user-attachments/assets/9f7f3010-1b2a-404a-b54c-c29bb62b764a)
 
