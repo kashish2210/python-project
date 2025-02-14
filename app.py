@@ -6,7 +6,10 @@ import email_validator
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail, Message
 import os
-app = Flask(__name__, static_url_path='/static', static_folder='static')
+from whitenoise import WhiteNoise
+
+app = Flask(__name__, static_folder='static')
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
 Bootstrap(app)
 app.secret_key = "kashish2210"
 
