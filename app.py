@@ -11,7 +11,7 @@ from whitenoise import WhiteNoise
 app = Flask(__name__, static_folder='static')
 app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
 Bootstrap(app)
-app.secret_key = "kashish2210"
+app.secret_key = "any_secret_key_value"
 
 class contactForm(FlaskForm):
     name = StringField(label='Name', validators=[DataRequired()]) 
@@ -24,9 +24,9 @@ class contactForm(FlaskForm):
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 587
 app.config["MAIL_USE_TLS"] = True
-app.config["MAIL_USERNAME"] = "shrivastavkashish420@gmail.com"
-app.config["MAIL_PASSWORD"] = "nmfg vcvj hcvq ldbi"
-app.config["MAIL_DEFAULT_SENDER"] = "shrivastavkashish420@gmail.com"
+app.config["MAIL_USERNAME"] = "youremail@gmail.com"
+app.config["MAIL_PASSWORD"] = "your app passwordd"
+app.config["MAIL_DEFAULT_SENDER"] = "youremailgmail.com"
 
 mail = Mail(app)
 
@@ -41,7 +41,7 @@ def contact():
         # Create email message
         msg = Message(
             subject="New Contact Form Submission",
-            recipients=["shrivastavkashish420@gmail.com"],  # Your email
+            recipients=["youremail@gmail.com"],  # Your email
             body=f"Name: {name}\nEmail: {user_email}\nMessage: {message_body}",
             sender=user_email  # Set sender dynamically
         )
