@@ -1,24 +1,24 @@
 **STEPS TO RUN WEBSITE LOCALLY**
 1. git clone "https://github.com/kashish2210/python-project.git"
-2. python -m venv venv #creating virtual environment
+2. python -m venv venv #creating a virtual environment
 3. venv/scripts/activate
-4. pip install -r reqirements.txt #hoping u will have python in your pc
+4. pip install -r reqirements.txt #hoping u will have Python in your pc
 5. cd __project file__ #go to your project file 
 6. python app.py #running on localhost
 7. "**setting up your mail system **"
-8. 1. go to your google account : mannage accounts
-   2. then turn on your two step verfication
-   3. then search for app apssword
-   4. genrate one
+8. 1. go to your Google account: manage accounts
+   2. then turn on your two-step verification
+   3. then search for the pp password
+   4. generate one
    5. then copy and paste it in app.py
-   6. then enter your-email three times replace the text "your_email" to the email you want to get notification
+   6. then enter your email three times replace the text "your_email" with the email you want to get a notification
    
 
 youtube video : "[https://youtu.be/OWs-FMcJ7Bc](https://youtu.be/OWs-FMcJ7Bc)"
 
 
 
-proof of gmail working:
+proof of Gmail working:
 
 ![WhatsApp Image 2025-02-14 at 04 35 28_ceda51e0](https://github.com/user-attachments/assets/9f7f3010-1b2a-404a-b54c-c29bb62b764a)
 
