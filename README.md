@@ -12,7 +12,9 @@
    4. genrate one
    5. then copy and paste it in app.py
    6. then enter your-email three times replace the text "your_email" to the email you want to get notification
-youtube video : https://youtu.be/OWs-FMcJ7Bc
+   
+
+youtube video : "[https://youtu.be/OWs-FMcJ7Bc](https://youtu.be/OWs-FMcJ7Bc)"
 
 
 
